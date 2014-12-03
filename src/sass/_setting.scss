@@ -1,0 +1,43 @@
+@charset "utf-8";
+// ============================================================
+// 設定
+// ============================================================
+
+// HTML5の場合は「true」
+$html5 : true;
+
+// compass ブラウザサポート
+$legacy-support-for-ie6 : true;
+$legacy-support-for-ie7 : true;
+
+$experimental-support-for-webkit : true;
+$experimental-support-for-mozilla : true;
+$experimental-support-for-opera : true;
+$experimental-support-for-microsoft : true;
+$experimental-support-for-khtml : false;
+
+
+// 標準font-family
+$fontFamily : 'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', Helvetica, verdana, Arial, sans-serif;
+
+// 標準テキストカラー
+$textColor : #333;
+
+// 標準リンクカラー
+$linkColor : #0000ee;
+$linkColor_visited : #551a8b;
+$linkColor_hover : #0000ee;
+$linkColor_active : #ff0000;
+
+// アクセントカラー
+$baseColor : #f0f0f0;
+
+// 画面サイズ
+$width : 1040px;
+
+//media-query用サイズ
+$maxWidth1 : 979px;
+$maxWidth2 : 639px;
+
+// Sprite
+//$sprites: sprite-map("icon/*.png");

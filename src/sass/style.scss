@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*!
+Theme Name:
+Theme URI:
+Author:
+Author URI:
+Description:
+Version: 1.0
+*/
+
+@import "compass",
+"setting",
+"extension",
+"normalize",
+"default";
+/*!====================
+ *    Styles
+ *====================*/
+/*====================
+ *    Common
+ *====================*/
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    color: $textColor;
+    line-height: 1.6;
+}
+a {
+    &:link,
+    &:visited {
+        color: $linkColor;
+        text-decoration: none;
+    }
+    &:hover,
+    &:active {
+        color: $linkColor_hover;
+        text-decoration: underline;
+    }
+    &:hover img {
+        @include opacity(0.6);
+    }
+    &.noHover:hover img {
+        @include opacity(1);
+    }
+    img {
+        @include transition(opacity, .3s);
+    }
+}
+/*====================
+ *    Modules
+ *====================*/
+/*--------------------
+ *    btn
+ *--------------------*/
+.btn {
+    @include inline-block;
+    @include border-radius(4px);
+    background-color: $linkColor;
+    @include fz(16);
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    @include transition(all, .3s);
+
+    &:link,
+    &:visited {
+        color: #fff;
+    }
+    &:hover,
+    &:active {
+        @include opacity(.6);
+        color: #fff;
+        text-decoration: none;
+    }
+}
+/*====================
+ *    Layout
+ *====================*/
+.gheader {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.content {
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+.gfooter {
+    padding: 10px;
+    background-color: #333;
+}
+/*====================
+ *    Component
+ *====================*/
+/*--------------------
+ *    header
+ *--------------------*/
+
+.logo {
+    margin: 0;
+}
+/*--------------------
+ *    footer
+ *--------------------*/
+.copyright {
+    margin-bottom: 0;
+    text-align: center;
+    color: #ccc;
+    @include fz(12);
+}
+/*--------------------
+ *    contents
+ *--------------------*/
+
