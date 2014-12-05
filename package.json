@@ -1,7 +1,7 @@
 {
-  "name": "EGAOinc",
+  "name": "grunt-assemble",
   "version": "0.0.1",
-  "description": "EGAOinc. Website",
+  "description": "StaticSite for grunt-assemble",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
