@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         watch: {
             js: {
                 files: ['<%= dir.src %>js/*.js'],
-                tasks: ['jshint']
+                tasks: ['jshint', 'copy:dev']
             },
             concat: {
                 files: ['<%= dir.src %>js/plugins/*.js'],
@@ -33,7 +33,9 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= dir.dev %>{,*/}*.html'
+                    '<%= dir.dev %>{,*/}*.html',
+                    '<%= dir.dev %>{,*/}*.js',
+                    '<%= dir.dev %>{,*/}*.css'
                 ]
             }
         },
