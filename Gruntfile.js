@@ -25,7 +25,7 @@ module.exports = function (grunt) {
                 tasks: ['compass']
             },
             assemble: {
-                files: ['<%= dir.src %>templates/{,*/}*.hbs'],
+                files: ['<%= dir.src %>templates/**/*.hbs'],
                 tasks: ['assemble']
             },
             livereload: {
@@ -33,9 +33,9 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '<%= dir.dev %>{,*/}*.html',
-                    '<%= dir.dev %>{,*/}*.js',
-                    '<%= dir.dev %>{,*/}*.css'
+                    '<%= dir.dev %>**/*.html',
+                    '<%= dir.dev %>**/*.js',
+                    '<%= dir.dev %>**/*.css'
                 ]
             }
         },
